@@ -1,0 +1,152 @@
+#about {
+   width: 80%;
+   max-width: 1000px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   margin: 0 auto;
+   padding-top: 0;
+}
+
+#about img {
+   margin-top: 8vh;
+   height: auto;
+   width: 300px;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+   border-radius: 50%;
+   margin-bottom: 20px;
+}
+
+.aboutMain {
+   margin-bottom: 20px;
+}
+
+.aboutMain p {
+   text-align: left;
+   padding: 10px;
+   line-height: 24px;
+   letter-spacing: 0.01em;
+   font-size: 1.05em;
+}
+
+.technologiesList {
+   align-self: center;
+   margin: 20px auto;
+   width: 100%;
+}
+
+.techListBtn {
+   background-color: #fff;
+   cursor: pointer;
+   border: 1px solid #333;
+   border-radius: 4px;
+   padding: 10px;
+   font-size: 1em;
+   transition: 0.2s;
+   margin-bottom: 20px;
+}
+
+.techListBtn:hover {
+   background-color: #ffe4b5;
+   transition: 0.2s;
+}
+
+.techListBtn:focus {
+   outline: none; 
+}
+
+.techListBtn:active {
+   background-color: #f79e02;
+   transition: 0.02s;
+   outline: none;
+}
+
+.techListContent {
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   width:fit-content;
+   align-items: flex-start;
+   justify-content: space-evenly;
+   text-align: left;
+}
+
+.tech-row {
+   display:flex;
+   flex-direction: row;
+   align-items: flex-start;
+   justify-content: space-evenly;
+}
+
+.tech-header {
+   font-size: 1.5em;
+   font-weight: 300;
+   letter-spacing: 0.03em;
+   margin: 0 auto 15px;
+}
+
+.tech-container {
+   margin: 10px 20px;
+}
+
+.tech-container:nth-child(1) {
+   width: 220px;
+}
+
+.tech-container ul {
+   margin-top: 5px;
+}
+
+.tech-container h4 {
+   font-size: 1.1em;
+}
+
+@media (max-width: 900px) {
+   #about {
+      width: 95%;
+   }
+   #about img {
+      width: 250px;
+      margin-top: 40px;
+   }
+   #aboutMain p {
+      line-height: 24px;
+      letter-spacing: 0em;
+      font-size: 1.02em;
+   }
+   #techListContent {
+      font-size: 0.9em;
+   }
+   #tech-header {
+      width: 100%;
+      font-size: 1em;
+      letter-spacing: 0.02em;
+   }
+   .tech-container:nth-child(1) {
+      width: 180px;
+   }
+   .tech-container h4 {
+      font-size: 1em;
+   }
+}
+
+
+@media (max-width: 600px) {
+   #techListBtn {
+      width: 80%;
+      word-wrap: normal;
+      margin: 0 auto;
+   }
+   .tech-row {
+      align-items: flex-start;
+   }
+   .tech-container {
+      margin: 8px 10px;
+   }
+   .tech-container li {
+      font-size: 0.95em;
+   }
+   .tech-container:nth-child(1){
+      width: 120px;
+   }
+}
