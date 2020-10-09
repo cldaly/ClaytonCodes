@@ -1,9 +1,9 @@
 import React from 'react';
 import './projects.styles.css';
 
-const Projects = () => {
+const Projects = ({projectsRef}) => {
    return(
-		<section id="projects">
+		<section id="projects" ref={projectsRef}>
 			<h3 className="sectionTitle">My Projects</h3>
 			<div className="projectsMain">
 					

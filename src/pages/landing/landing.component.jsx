@@ -1,11 +1,10 @@
 import React from 'react';
 import './landing.styles.css';
-
 import About from './about/about.component';
 import Projects from './projects/projects.component';
-import Contact from './about/contact/contact.component';
+import Contact from './contact/contact.component';
 
-const Landing = () => {
+const Landing = ({aboutRef, projectsRef, contactRef, handleScroll}) => {
 	return(
 		<div className='landing-main'>
 			<section className="titleSection">
@@ -13,16 +12,15 @@ const Landing = () => {
 						<h1 className="landingTitle">Clayton Daly</h1>
 						<p>Full Stack Web Developer</p>
 						<div className="learnMore">
-							<a href="#about">Learn More</a>
+							<button type='button' className='nav-btn' onClick={handleScroll.bind(this, aboutRef)}>Learn More</button>
 						</div>
 				</div>
 			</section>
 
-			<About />
+			<About aboutRef={aboutRef} />
+			<Projects projectsRef={projectsRef} />
+			<Contact contactRef={contactRef} />
 
-			<Projects />
-
-			<Contact />
 		</div>
 	);
 }

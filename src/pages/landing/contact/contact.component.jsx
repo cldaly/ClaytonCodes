@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './contact.styles.css';
 
-const Contact = () => {
+const Contact = ({contactRef}) => {
 	return(
-		<section id="contact">
+		<section id="contact" ref={contactRef}>
 			<h3 className="sectionTitle">Contact Me</h3>
 			<hr />
 			<div className="contactMain">

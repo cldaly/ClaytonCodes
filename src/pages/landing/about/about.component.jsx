@@ -1,9 +1,9 @@
 import React from 'react';
 import './about.styles.css';
 
-const About = () => {
+const About = ({aboutRef}) => {
 	return(
-		<section id="about">
+		<section id="about" ref={aboutRef}>
 			<img src="../img/clay-daly-01.png" alt='Clayton Daly' />
 			<h3 className="sectionTitle">About me</h3>
 			<div className="aboutMain">

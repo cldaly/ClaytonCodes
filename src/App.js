@@ -6,13 +6,25 @@ import Footer from './components/footer/footer.component';
 import Landing from './pages/landing/landing.component';
 
 class App extends Component {
+	constructor(props) {
+		super(props);
+		this.aboutRef = React.createRef();
+		this.projectsRef = React.createRef();
+		this.contactRef = React.createRef();
+	}
+	handleScroll = (ref) => {
+		ref.current.scrollIntoView({
+			behavior: 'smooth',
+			block: 'start'
+		});
+	}
 	render() {
 		return(
 			<div className='clayton-codes'>
-				<Header />
+				<Header aboutRef={this.aboutRef} projectsRef={this.projectsRef} contactRef={this.contactRef} handleScroll={this.handleScroll} />
 				<Switch>
 					<Route path='/'>
-						<Landing />
+						<Landing aboutRef={this.aboutRef} projectsRef={this.projectsRef} contactRef={this.contactRef} handleScroll={this.handleScroll} />
 					</Route>
 				</Switch>
 				<Footer />

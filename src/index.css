@@ -27,11 +27,35 @@ a {
   opacity: 0.7;
   color: #000;
   transition: opacity 0.2s;
+  border: none;
+  background-color: transparent;
 }
-
 a:hover {
   transition: opacity 0.2s;
   opacity: 1;
+}
+
+.nav-btn {
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  opacity: 0.7;
+  color: #000;
+  transition: opacity 0.2s;
+  border: none;
+  background-color: transparent;
+}
+
+.nav-btn:hover {
+  cursor: pointer;
+  transition: opacity 0.2s;
+  opacity: 1;
+}
+.nav-btn:focus {
+  outline: none;
+}
+.nav-btn:active {
+  outline: none;
 }
 
 hr {
