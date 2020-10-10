@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './landing.styles.css';
 import About from './about/about.component';
 import Projects from './projects/projects.component';
 import Contact from './contact/contact.component';
 
 const Landing = ({aboutRef, projectsRef, contactRef, handleScroll}) => {
+	useEffect(() => {
+		document.title = 'Clayton Codes';
+	});
 	return(
 		<div className='landing-main'>
 			<section className="titleSection">
