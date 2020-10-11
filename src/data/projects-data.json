@@ -1,0 +1,112 @@
+{
+   "projects": {
+		"full-stack-of-cards": {
+         "projectName": "Full Stack of Cards", 
+         "title": "Clayton Codes | Full Stack of Cards",
+         "headerImg": { "src": "/img/full-stack-cards-small.png", "alt": "full-stack-cards-small" },
+         "status": null,
+         "brief": "Flash cards for Full Stack Java Developers. Built with JavaScript, Java, ReactJS, Spring Boot, and PostgreSQL. All design and styling custom created and without the use of Bootstrap/Material or any similar library.",
+			"goal": "for this project was to create a full stack web application with ReactJS on the front end, that could also assist in interview preparation.",
+			"gitUrl": "https://github.com/cldaly/FullStackOfCards",
+			"description": [
+				"This project was primarily undertaken as a means of practicing React on the front end, as well as Spring Boot / PostgreSQL on the back end. This project simply offers a UI for a user to practice interview questions for a Java Developer role.",
+				"The back end was built in Java, using Spring Boot's RESTapi services. Flash Cards are read, updated, retrieved, and deleted to a PostgreSQL database using MongoRepository interface. There is also a simple User controller that allows for the login and registration of new users. Forms feature custom validation on the front end, along with messages to aid in UX.",
+				"When a user enters the web app, all flash cards will be pulled from the database. Random flash cards will be pulled and generated for the user. The flash card's unique ID will be logged into an array and checked to ensure each card gets displayed once every cycle of cards. Users that are logged in can add new flash cards to the database, and can also view the cards they have added. They can search through, edit, and delete their cards through their user portal."
+			],
+			"techList": ["JavaScript", "ReactJS", "Java", "Spring Boot", "PostgreSQL", "HTML5 & CSS3"],
+			"imgGallery": [
+				{ "group": false, "img": { "src": "/img/full-stack-cards-01.png", "alt": "full-stack-cards-01" }, "desc": "The landing page for this app features a slick loading animation for the user, as they proceed into the application" },
+				{ "group": true, "img": [{ "src": "/img/full-stack-cards-02.png", "alt": "full-stack-cards-02" }, { "src": "/img/full-stack-cards-03.png", "alt": "full-stack-cards-03" }], "desc": "Once the user has entered the app, all cards in the database will be retrieved, and a random card will be displayed. That card's ID will be logged to ensure cards will not be repeated until the user has gone through all cards" },
+				{ "group": false, "img": { "src": "/img/full-stack-cards-04.png", "alt": "full-stack-cards-04" }, "desc": "A logged in user can view all of the cards they have added. A search bar at top will instantly filter the list of flash cards for better access. The user can edit or delete their cards from this page" },
+				{ "group": true, "img": [{ "src": "/img/full-stack-cards-05.png", "alt": "full-stack-cards-05" }, { "src": "/img/full-stack-cards-06.png", "alt": "full-stack-cards-06" }], "desc": "The application features a very simple login and registration component, as seen on the left. Once logged in, a user can easily add flash cards to the database with the form on the right. These forms feature custom validation" } 
+			]
+		},
+		"musix-app": {
+			"projectName": "Musix App", 
+         "title": "Clayton Codes | Musix App",
+         "headerImg": { "src": "/img/musix-app-small.png", "alt": "musix-app-small" },
+         "status": null,
+         "brief": "An Angular / Spring Boot application for users to find and save their favorite music albums.",
+			"goal": "for this project was to create a web app that communicates with a third party api, and performs CRUD operations with a REStful backend api.",
+			"gitUrl": "https://github.com/cldaly/MusixApp",
+			"description": [
+				"There are two parts to this project. The frontend was created using Angular, and pulls albums from last.fm's api using search criteria provided by the user. Album cards will be generated on the search page, and clicking the album will run another api get request to populate the tracklist for that album.",
+				"The user can register and login to create their own profile, which will allow them to save albums that they like. Their album list can then be viewed and altered accordingly. If the user is logged in and creates a new search, albums that have already been saved will be notated accordingly, and can be unsaved.",
+				"The users and saved albums are stored in a MySql database through a Java / Spring Boot backend. The backend follows RESTful API structure, and is implemented using Spring Web, JPA, Security, and jjwt tokens for user authentication."
+			],
+			"techList": ["Java", "Spring Boot", "Spring JPA & Security", "JSON Web Token (jjwt)", "JavaScript & TypeScript", "Angular8", "MaterialUI"],
+			"imgGallery": [
+				{ "group": false, "img": { "src": "/img/musix-app-01.png", "alt": "musix-app-01" }, "desc": "A logged in user can view albums that they have saved. Clicking an album will pull up the tracklist, and the user can un-save the album if they choose." },
+				{ "group": false, "img": { "src": "/img/musix-app-02.png", "alt": "musix-app-02" }, "desc": "The results for a search being displayed. Search criteria is sent to last.fm api and album data is returned. This data is converted into album cards for the user. If a user is logged in, they will be able to save albums they like. Albums that have already been saved will be given the option to un-save, as seen above." },
+				{ "group": true, "img": [{ "src": "/img/musix-app-03.png", "alt": "musix-app-03" }, { "src": "/img/musix-app-04.png", "alt": "musix-app-04" }], "desc": "Login and register forms provided for the user. Registering will give the user the option of uploading a profile picture. Login services will generate a jjwt token through the backend with Spring Security for user authentication." },
+				{ "group": true, "img": [{ "src": "/img/musix-app-05.png", "alt": "musix-app-05" }, { "src": "/img/musix-app-06.png", "alt": "musix-app-06" }], "desc": "The application features an alert box to communicate messages with the user. The message will close itself after a set amount of time. Users can also view tracklistings for each album as seen above." },
+				{ "group": false, "img": { "src": "/img/musix-app-07.png", "alt": "musix-app-07" }, "desc": "A user profile will all for password changes, profile picture updates, and will allow the user to delete their profile." }
+			]
+		},
+		"train-ticket": {
+			"projectName": "Train Ticket Generator", 
+         "title": "Clayton Codes | Train Ticket Generator",
+         "headerImg": { "src": "/img/train-ticket-small.png", "alt": "train-ticket-small" },
+         "status": null,
+         "brief": "A user will be able to generate a train ticket based on train data saved to an Oracle SQL database. A form is dynamically created based on the number of passengers, and the final ticket is saved to the user's Downloads folder.",
+			"goal": "for this project was to create a simple web application using Java, JSP, Oracle SQL, and JavaScript.",
+			"gitUrl": "https://github.com/cldaly/TrainTicket",
+			"description": [
+				"This project was built as a Java Dynamic Web Project using Eclipse. Basic logic is performed in a JSP Servlet file, and communicates with an Oracle SQL database with a DAO jdbc class.",
+				"This project uses JavaScript to display the form for the user and set date constraints in the user's form. The form will also change dynamically depending on the number of passengers a user wants to add to a ticket.",
+				"Once the ticket has been generated as a method of the Ticket Java class, it will be displayed on the web app for the user, and will also be saved to the downloads folder by using a Buffered File Writer."
+			],
+			"techList": ["Java", "JavaServer Pages (JSP)", "Oracle SQL", "JavaScript", "HTML & CSS"],
+			"imgGallery": [
+				{ "group": false, "img": { "src": "/img/train-ticket-01.png", "alt": "train-ticket-01" }, "desc": "The landing page for the user. The train ticket form will be displayed when the user clicks the 'Generate' button." },
+				{ "group": false, "img": { "src": "/img/train-ticket-02.png", "alt": "train-ticket-02" }, "desc": "The train ticket form. The date field will be configured using the user's current date, and the passenger inputs will update based on the number of passengers selected. The form updates using JavaScript." },
+				{ "group": false, "img": { "src": "/img/train-ticket-03.png", "alt": "train-ticket-03" }, "desc": "The final ticket generated for the user, of which a copy has been saved to their Downloads folder." }
+			]
+		},
+		"my-spirit-circle": {
+			"projectName": "My Spirit Circle", 
+         "title": "Clayton Codes | My Spirit Circle",
+         "headerImg": { "src": "/img/my-spirit-circle-small.png", "alt": "my-spirit-circle-small" },
+         "status": "Work in progress",
+         "brief": "All Development and Design done by Clayton Daly; My Spirit Circle is a one-stop-shop type marketplace to help connect spiritual healers with clients.",
+			"goal": "of this web application is to expand upon the web development concepts, both front-end and back-end, that I have learned so far, and apply them to a real world application.",
+			"gitUrl": "https://github.com/cldaly/my-spirit-circle",
+			"description": [
+				"My Spirit Circle is a personal project I embarked on in July 2019 as both a business idea and a project to further learn about full stack web development. This web application will operate as a one-stop-shop type marketing platform for individuals practicing Spiritual Healing, and will allow them to connect with clients.",
+				"The early phases of this project so far have mostly consisted of design and front end aspects. My Spirit Circle is built using Node.js and Express.js, and will soon be integrated with MySQL to create user functionality.",
+				"Currently, I am completing static versions of the web pages a user will need to interface with service providers (some seen below). Soon, I will integrate these routes with MySQL for dynamic application that will allow users to create profiles and will allow service providers to create their own classes and servicesd.",
+				"Future projects include designing and developing an internal messaging platform, and integrating a video chat type feature to allow service providers to hold classes and sessions with their clients."
+			],
+			"techList": ["JavaScript", "NodeJS", "ExpressJS", "MySQL", "HTML & CSS", "Bootstrap 3"],
+			"imgGallery": [
+				{ "group": false, "img": { "src": "/img/my-spirit-circle-01.png", "alt": "my-spirit-circle-01" }, "desc": "My Spirit Circle's landing page which features a search bar and toggle between local and online services." },
+				{ "group": false, "img": { "src": "/img/my-spirit-circle-02.png", "alt": "my-spirit-circle-02" }, "desc": "The landing page will also feature a section showcasing the site's most popular services, with a link to more service. Further down the landing page will hold an \"about\" section, as well as a short email form for those interested in becoming a service provider." },
+				{ "group": false, "img": { "src": "/img/my-spirit-circle-03.png", "alt": "my-spirit-circle-03" }, "desc": "Utilizing the capabilities of flex-box, the early stages of the services page will provide the user with a list of classes and services provided by various spiritual healers. Users can select certain services as favorites, and can refine their search with a comprehensive search bar on the left." },
+				{ "group": false, "img": { "src": "/img/my-spirit-circle-04.png", "alt": "my-spirit-circle-04" }, "desc": "All pages will be responsive to mobile screen sizes, as seen here." },
+				{ "group": false, "img": { "src": "/img/my-spirit-circle-05.png", "alt": "my-spirit-circle-05" }, "desc": "An early version of a service provider's profile, which will feature user information, a list of services they offer, as well as a review section complete with comments." }
+			]
+		},
+		"rileys-candles": {
+			"projectName": "Riley's Candles", 
+         "title": "Clayton Codes | Riley's Candles",
+         "headerImg": { "src": "/img/rileys-candles-small.png", "alt": "Riley's Candles" },
+         "status": "Harvard CS50 - Introduction to Computer Science",
+         "brief": "Riley's Candles is a simple e-commerce type web app designed for a final class project, built off of Flask and Python, utilizing Sqlite3 and Javascript for functionality.",
+			"goal": "for this project was to gain a better understanding of back-end logic, how to utilize a framework such as flask to create web applications, and how to create dynamic applications using databases.",
+			"gitUrl": "https://github.com/cldaly/CS50-Final-Project-rileysCandles",
+			"description": [
+				"Roughly 90% of this whole project's code was written by myself, with the rest provided by the class as a starter template. This project was built as an e-commerce type web application, allowing theoretical users to purchase a seller's candles.",
+				"The web app features user authentication to allow access to a personalized web portal. The user, once given access, was allowed to make purchases, add funds to their account, and browse their user history.",
+				"The owner of the web app also had access to an admin portal, which allowed them to view a sales summary, check inventory, restock candles, and to add new candles into their inventory.",
+				"The basic web layout follows standard RESTful web service practices. Core functionality and logic involved reading and writing to three main database collections (user data, transaction history, and product inventory database collections) built in Sqlite3 using Python."
+			],
+			"techList": ["Python", "Flask", "SQLite3", "JavaScript", "HTML & CSS", "Bootstrap 3"],
+			"imgGallery": [
+				{ "group": false, "img": { "src": "/img/rileys-candles-01.png", "alt": "rileys-candles-01" }, "desc": "A simple landing page for our user. User data, such as store credit balance and admin status will be pulled from Sqlite3, to create content seen above." },
+				{ "group": false, "img": { "src": "/img/rileys-candles-02.png", "alt": "rileys-candles-02" }, "desc": "Form used prior to purchase, utilizes Javascript to cross check user funds, and will confirm purchase can be made." },
+				{ "group": false, "img": { "src": "/img/rileys-candles-03.png", "alt": "rileys-candles-03" }, "desc": "Users with admin access will be able to view sales dashboards such as this above, based on transaction data pulled from Sqlite3." },
+				{ "group": false, "img": { "src": "/img/rileys-candles-04.png", "alt": "rileys-candles-04" }, "desc": "Admins will also be able to add new products to their inventory with the form above, which will write a new line to the inventory database." } 
+			]
+		}
+	}
+}

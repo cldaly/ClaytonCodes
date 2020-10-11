@@ -15,6 +15,7 @@ const Project = ({proj}) => {
 					<img className='project-img-sm' src={ proj.headerImg.src } alt={ proj.headerImg.alt } />
 					<div className="projectHeaderContent">
 						<h2>{ proj.projectName }</h2>
+						{ proj.status && <p>{ proj.status }</p> }
 						<p><strong>Brief:</strong> { proj.brief }</p>
 						<p><strong>The goal</strong> { proj.goal }</p>
 						<p className="gitRepo"><Link to={{ pathname: proj.gitUrl }} target="_blank"><i className="fab fa-github"></i> View GitHub Repository</Link></p>
