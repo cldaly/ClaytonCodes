@@ -11,11 +11,13 @@ class App extends Component {
 	constructor(props) {
 		super(props);
 
-		this.aboutRef = React.createRef();
-		this.projectsRef = React.createRef();
-		this.contactRef = React.createRef();
-
-		this.projects = projectData.projects;
+		this.state = {
+			aboutRef: React.createRef(),
+			projectsRef: React.createRef(),
+			contactRef: React.createRef(),
+			projects: projectData.projects
+		}
+		
 	}
 	
 	handleScroll = (ref) => {
@@ -28,25 +30,25 @@ class App extends Component {
 	render() {
 		return(
 			<div className='clayton-codes'>
-				<Header aboutRef={this.aboutRef} projectsRef={this.projectsRef} contactRef={this.contactRef} handleScroll={this.handleScroll} />
+				<Header aboutRef={this.state.aboutRef} projectsRef={this.state.projectsRef} contactRef={this.state.contactRef} handleScroll={this.handleScroll} />
 				<Switch>
 					<Route exact path='/'>
-						<Landing aboutRef={this.aboutRef} projectsRef={this.projectsRef} contactRef={this.contactRef} handleScroll={this.handleScroll} />
+						<Landing aboutRef={this.state.aboutRef} projectsRef={this.state.projectsRef} contactRef={this.state.contactRef} handleScroll={this.handleScroll} />
 					</Route>
 					<Route path='/full-stack-of-cards'>
-						<Project proj={this.projects["full-stack-of-cards"]} />
+						<Project proj={this.state.projects["full-stack-of-cards"]} />
 					</Route>
 					<Route path='/musix-app'>
-						<Project proj={this.projects["musix-app"]} />
+						<Project proj={this.state.projects["musix-app"]} />
 					</Route>
 					<Route path='/train-ticket'>
-						<Project proj={this.projects["train-ticket"]} />
+						<Project proj={this.state.projects["train-ticket"]} />
 					</Route>
 					<Route path='/my-spirit-circle'>
-						<Project proj={this.projects["my-spirit-circle"]} />
+						<Project proj={this.state.projects["my-spirit-circle"]} />
 					</Route>
 					<Route path='/rileys-candles'>
-						<Project proj={this.projects["rileys-candles"]} />
+						<Project proj={this.state.projects["rileys-candles"]} />
 					</Route>
 				</Switch>
 				<Footer />
