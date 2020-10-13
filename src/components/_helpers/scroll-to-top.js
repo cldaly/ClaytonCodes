@@ -8,7 +8,7 @@ export default function ScrollToTop() {
   //       Need to scroll to top when clicking on home but not for back button
 
   useEffect(() => {
-    if (pathname === '/') return;
+    // if (pathname === '/') return;
     window.scrollTo({
        top: 0,
        left: 0,

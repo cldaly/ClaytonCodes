@@ -6,7 +6,7 @@ const Header = ({ aboutRef, projectsRef, contactRef, handleScroll, handleNav }) 
 	const { pathname } = useLocation();
 
 	return(
-		<header className='cch'>
+		<header className={(pathname === '/') ? 'cch cch-fixed' : 'cch cch-top'}>
 			<h2 className='cch2'><Link to="/">{`${String.fromCharCode(123)}${String.fromCharCode(123)} Clayton Codes ${String.fromCharCode(125)}${String.fromCharCode(125)}`}</Link></h2>
 			{pathname === '/' && 
 			<nav className='ccnav'>

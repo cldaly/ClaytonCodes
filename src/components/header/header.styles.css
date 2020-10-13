@@ -1,5 +1,4 @@
 .cch {
-  position: fixed;
   height: 6vh;
   width: 100%;
   display: flex;
@@ -10,6 +9,14 @@
   background-color: #ffe4b5;
   z-index: 1;
   opacity: 0.95;
+}
+
+.cch-fixed {
+  position: fixed;
+}
+
+.cch-top {
+  position: absolute;
 }
 
 .cch .cch2 {
