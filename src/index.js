@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { BrowserRouter } from 'react-router-dom';
-import ScrollToTop from './components/scroll-to-top';
+import { Router } from 'react-router-dom';
+import ScrollToTop from './components/_helpers/scroll-to-top';
+import history from './components/_helpers/history';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <Router history={history}>
     <App />
     <ScrollToTop />
-  </BrowserRouter>
+  </Router>
   , document.getElementById('root')
 );

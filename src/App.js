@@ -6,6 +6,7 @@ import Landing from './pages/landing/landing.component';
 import Project from './components/project/project.component';
 import projectData from './data/projects-data.json';
 import './App.css';
+import history from './components/_helpers/history';
 
 class App extends Component {
 	constructor(props) {
@@ -19,7 +20,7 @@ class App extends Component {
 		}
 		
 	}
-	
+
 	handleScroll = (ref) => {
 		ref.current.scrollIntoView({
 			behavior: 'smooth',
@@ -27,10 +28,15 @@ class App extends Component {
 		});
 	}
 
+	handleNav = (ref) => {
+		history.push("/");
+		console.log(ref);
+	}
+
 	render() {
 		return(
 			<div className='clayton-codes'>
-				<Header aboutRef={this.state.aboutRef} projectsRef={this.state.projectsRef} contactRef={this.state.contactRef} handleScroll={this.handleScroll} />
+				<Header aboutRef={this.state.aboutRef} projectsRef={this.state.projectsRef} contactRef={this.state.contactRef} handleScroll={this.handleScroll} handleNav={this.handleNav} />
 				<Switch>
 					<Route exact path='/'>
 						<Landing aboutRef={this.state.aboutRef} projectsRef={this.state.projectsRef} contactRef={this.state.contactRef} handleScroll={this.handleScroll} />
